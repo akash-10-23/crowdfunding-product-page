@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font-family: "Commissioner", sans-serif;
+}
+
+/* Header CSS start */
+.pageHeader {
+    background-image:linear-gradient(
+        180deg,
+        hsla(0, 0%, 0%, 0.7) 0%,
+        hsla(0, 0%, 48%, 0.2) 50%
+      ), url("../images/image-hero-desktop.jpg");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    height: 27vw;
+}
+.headNav {
+    display: flex;
+    padding: 3.2vw 11.2vw;
+}
+.mainLogo {
+    flex: 0 1 50%;
+}
+.logoSize {
+    display: block;
+    width: 13rem;
+}
+.mainNav {
+    flex: 0 1 50%;
+}
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+.menuOption {
+    margin: 0 3rem;
+}
+.menuLink {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+/* Header CSS end */
+
+/* Home Page CSS start */
+.homePage {
+    background-color: #fafafa;
+    height: 170rem;
+    position: relative;
+}
+.intro {
+    background-color: transparent;
+    position: absolute;
+    top: -6vw;
+    min-width: 50vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.aboutOrg {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 5rem;
+    margin-bottom: 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem -0.8rem rgba(0, 0, 0, 0.3);
+}
+.orgLogo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.orgName {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.tagline {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: hsl(0, 0%, 48%);
+}
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+}
+.support {
+    background-color: hsl(176, 50%, 47%);
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 2rem 3.5rem;
+    border: none;
+    border-radius: 4rem;
+    transition-duration: 0.5s;    
+}
+.support:hover {
+    background-color: hsl(176, 72%, 28%);
+}
+.bookmark {
+    position: relative;
+}
+.bookmarkImg {
+    position: absolute;
+    height: 100%;
+    width: auto;
+}
+.save {
+    background-color: #f4f4f4;
+    color: hsl(0, 0%, 48%);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 2rem 2.5rem;
+    padding-left: 6.5rem;
+    outline: none;
+    border: none;
+    border-radius: 4rem;
+}
+/* Home Page CSS end */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
