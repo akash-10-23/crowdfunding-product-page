@@ -134,6 +134,66 @@ body {
     border: none;
     border-radius: 4rem;
 }
+
+/* Status CSS */
+.status {
+    background-color: #ffffff;
+    padding: 5rem;
+    margin-bottom: 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem -0.8rem rgba(0, 0, 0, 0.3);
+}
+.details {
+    display: flex;
+}
+.info {
+    margin-bottom: 4rem;
+}
+.info:nth-child(1){
+    padding-right: 4rem;
+}
+.infoBorder {
+    padding-left: 4rem;
+    padding-right: 8rem;
+    border-left: 0.1rem solid hsl(0, 0%, 48%);
+    border-right: 0.1rem solid hsl(0, 0%, 48%);
+}
+.info:nth-child(3){
+    padding-left: 4rem;
+}
+.infoTitle {
+    font-size: 3.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.infoText {
+    color: hsl(0, 0%, 48%);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.statusBar {
+    position: relative;
+    height: 1.2rem;
+    border-radius: 4rem;
+}
+.statusTarget {
+    background-color: #f4f4f4;
+    position: relative;
+    width: 100%;
+    height: 1.2rem;
+    top: 0;
+    border-radius: 4rem;
+    z-index: 25;
+}
+.statusProgress {
+    background-color: hsl(176, 50%, 47%);
+    position: absolute;
+    width: 70%;
+    height: 1.2rem;
+    top: 0;
+    border-radius: 4rem;
+    z-index: 50;
+}
 /* Home Page CSS end */
 
 .attribution { font-size: 11px; text-align: center; }
