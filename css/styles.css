@@ -118,6 +118,13 @@ body {
 .bookmark {
     position: relative;
 }
+.bookmarkBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
+}
 .bookmarkImg {
     position: absolute;
     height: 100%;
@@ -188,11 +195,88 @@ body {
 .statusProgress {
     background-color: hsl(176, 50%, 47%);
     position: absolute;
-    width: 70%;
+    width: 80%;
     height: 1.2rem;
     top: 0;
     border-radius: 4rem;
     z-index: 50;
+}
+
+/* About Section */
+.about {
+    background-color: #ffffff;
+    padding: 5rem;
+    margin-bottom: 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem -0.8rem rgba(0, 0, 0, 0.3);
+}
+.aboutTitle {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.paraOne {
+    font-weight: 400;
+    font-size: 1.55rem;
+    color: hsl(0, 0%, 48%);
+    margin-bottom: 3rem;
+}
+.paraTwo {
+    font-weight: 400;
+    font-size: 1.55rem;
+    color: hsl(0, 0%, 48%);
+    margin-bottom: 2rem;
+}
+
+.fundCard{
+    padding: 3rem;
+    border: 0.1rem solid hsla(0, 2%, 53%, 0.3);
+    border-radius: 1rem;
+}
+.cardHead {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.cardTitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.cardPay {
+    font-size: 1.5rem;
+    color: hsl(176, 50%, 47%);
+    font-weight: 500;
+}
+.cardReward {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reward {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rewardLeft {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-right: 1rem;
+}
+.rewardText {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: hsl(0, 0%, 48%);
+}
+.supportFont {
+    font-size: 1.3rem;
+}
+.cardMargin {
+    margin: 2rem 0;
+}
+.cardOpacity {
+    opacity: 0.6;
+}
+.supportBg {
+    background-color: hsl(0, 0%, 48%);
 }
 /* Home Page CSS end */
 
