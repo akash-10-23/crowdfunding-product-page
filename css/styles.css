@@ -280,5 +280,94 @@ body {
 }
 /* Home Page CSS end */
 
+/* Back this project */
+.supportMenu {
+    background-color: hsla(0, 0%, 0%, 0.6);
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 18.5rem;
+    z-index: 200;
+}
+.supportMenuShow {
+    opacity: 1;
+    display: flex;
+}
+.supportWindow {
+    background-color: #ffffff;
+    position: relative;
+    opacity: 1;
+    display: inline-block;
+    max-width: 72rem;
+    padding: 4.5rem;
+    border-radius: 0.6rem;
+}
+.supportClose {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+}
+.supportTitle {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+.supportText {
+    color: hsl(0, 0%, 48%);
+    font-size: 16px;
+    margin-bottom: 2rem;
+}
+.supportBox {
+    padding: 2.5rem 0;
+    border-radius: 0.6rem;
+    border: 0.1rem solid hsla(0, 2%, 53%, 0.3);
+    transition-duration: 0.25s;
+}
+.supportContent {
+    padding: 0 2.5rem;
+    padding-bottom: 2.5rem;
+    display: block;
+    grid-template-columns: repeat(2, 25%);
+    grid-template-rows: repeat(2, auto);
+}
+.radioInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.radioBtn {
+    width: 2rem;
+    height: 2rem;
+}
+.radioTitle {
+    margin-left: 2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.supportContentText {
+    padding-left: 4rem;
+    color: hsl(0, 0%, 48%); 
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+}
+.supportBoxMargin {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.pledge {
+    color: hsl(176, 50%, 47%);
+    margin-left: 2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.pledgeAlign {
+    display: grid;
+    justify-content: end;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
