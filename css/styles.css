@@ -110,13 +110,15 @@ body {
     padding: 2rem 3.5rem;
     border: none;
     border-radius: 4rem;
-    transition-duration: 0.5s;    
+    transition-duration: 0.5s;   
+    cursor: pointer; 
 }
 .support:hover {
     background-color: hsl(176, 72%, 28%);
 }
 .bookmark {
     position: relative;
+    cursor: pointer;
 }
 .bookmarkBox {
     position: absolute;
@@ -140,6 +142,7 @@ body {
     outline: none;
     border: none;
     border-radius: 4rem;
+    cursor: pointer;
 }
 
 /* Status CSS */
@@ -310,6 +313,7 @@ body {
     position: absolute;
     top: 3rem;
     right: 3rem;
+    cursor: pointer;
 }
 .supportTitle {
     font-size: 2.4rem;
@@ -353,6 +357,10 @@ body {
     font-size: 1.6rem;
     font-weight: 700;
 }
+.radioTitle:hover{
+    cursor: pointer;
+    color: hsl(176, 50%, 47%);
+}
 .supportContentText {
     padding-left: 4rem;
     color: hsl(0, 0%, 48%); 
@@ -375,6 +383,11 @@ body {
     display: flex;
     justify-content: space-between;
     padding-right: 2rem;
+}
+.pledgeAlign {
+    margin-left: 2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
 }
 .pledgeAlign > span {
     padding-left: 0.5rem;

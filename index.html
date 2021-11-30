@@ -19,7 +19,7 @@
 <body>
 
   <!-- Selection modal start -->
-  <section class="supportMenu supportMenuShow">
+  <section class="supportMenu">
     <div class="supportWindow">
       <div class="supportClose">
         <img src="./images/icon-close-modal.svg" alt="" class="sClose">
@@ -34,7 +34,7 @@
         <div class="supportContent simple">
           <div class="radioInfo">
             <div class="radioOption">
-              <input type="radio" id="noReward" class="radioBtn">
+              <input type="radio" id="noReward" name="projectSupport" class="radioBtn">
             <label for="noReward" class="radioTitle">Pledge with no reward</label>
             </div>
           </div>
@@ -49,14 +49,14 @@
         <div class="supportContent">
           <div class="radioInfo">
             <div class="radioOption">
-              <input type="radio" id="firstReward" class="radioBtn">
+              <input type="radio" id="firstReward" name="projectSupport" class="radioBtn">
               <div>
                 <label for="firstReward" class="radioTitle">Bamboo Stand</label>
                 <p class="pledge">Pledge $25 or more</p>
               </div>
             </div>
             <div class="radioEnd">
-              <p class="radioTitle pledgeAlign">101 <span>left</span> </p>
+              <p class="pledgeAlign">101 <span>left</span> </p>
             </div>
           </div>
 
@@ -71,7 +71,7 @@
         <div class="supportContent">
           <div class="radioInfo">
             <div class="radioOption">
-              <input type="radio" id="secondReward" class="radioBtn">
+              <input type="radio" id="secondReward" name="projectSupport" class="radioBtn">
               <div>
                 <label for="secondReward" class="radioTitle">Black Edition Stand</label>
                 <p class="pledge">Pledge $75 or more</p>
@@ -79,7 +79,7 @@
             </div>
             
             <div class="radioEnd">
-              <p class="radioTitle pledgeAlign">64 <span>left</span> </p>
+              <p class="pledgeAlign">64 <span>left</span> </p>
             </div>
           </div>
           <p class="supportContentText">
@@ -89,11 +89,11 @@
         </div>
       </div>
 
-      <div class="supportBox supportBoxMargin">
+      <div class="supportBox supportBoxMargin cardOpacity">
         <div class="supportContent">
           <div class="radioInfo">
             <div class="radioOption">
-              <input type="radio" id="thirdReward" class="radioBtn">
+              <input type="radio" id="thirdReward" name="projectSupport" class="radioBtn">
               <div>
                 <label for="thirdReward" class="radioTitle">Mahogany Special Edition</label>
                 <p class="pledge">Pledge $200 or more</p>
@@ -101,7 +101,7 @@
             </div>
             
             <div class="radioEnd">
-              <p class="radioTitle pledgeAlign">0 <span>left</span> </p>
+              <p class="pledgeAlign">0 <span>left</span> </p>
             </div>
             
           </div>
@@ -181,7 +181,7 @@
         </p>
 
         <div class="options">
-          <button class="support">Back this project</button>
+          <button id="support" class="support">Back this project</button>
           <div class="bookmark">
             <button class="save">Bookmark</button>
             <div class="bookmarkBox">
@@ -299,5 +299,8 @@
   Got it!
 
   <!-- Success modal end -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
