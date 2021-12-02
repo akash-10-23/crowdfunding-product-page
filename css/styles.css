@@ -397,5 +397,63 @@ body {
     line-height: 2.5rem;
 }
 
+.supportOption {
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.5rem;
+    transition-duration: 0.5s, 0.3s, 0.6s;
+    transition-property: max-height, padding, border-top;
+    border-top: 0.1rem solid hsla(0, 27%, 2%, 0);
+}
+.supportOptionShow {
+    max-height: 50rem;
+    padding: 2.5rem; 
+    padding-bottom: 0;
+    border-top: 0.1rem solid hsla(0, 2%, 53%, 0.3);
+}
+.supportOptionText {
+    color: hsl(0, 0%, 48%);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.payInput {
+    color: hsl(0, 0%, 48%);
+    font-weight: 700;
+    font-size: 1.4rem;
+    position: relative;
+    display: inline-block;
+}
+.optionsInput {
+    position: relative;
+    max-width: 10rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 1.4rem 4rem;
+    padding-right: 2rem;
+    margin-right: 2rem;
+    border: 0.1rem solid hsla(0, 2%, 53%, 0.3);
+    border-radius: 4rem;
+    outline: none;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.dollarSign {
+    position: absolute;
+    width: 1.5rem;
+    top: 1.4rem;
+    left: 2rem;
+    z-index: 200;
+}
+.continue {
+    padding: 1.4rem 2.5rem;
+    font-size: 1.4rem;
+}
+.supportBorder {
+    border: 0.25rem solid hsl(176, 50%, 47%);
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
