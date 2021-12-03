@@ -29,7 +29,7 @@ radioOptions.forEach((radio) => {
         if (event.target.tabIndex == 1)
             lastBlock = addBorder(event.path[4], lastBlock);
         else
-            lastBlock = addBorder(event.path[5], lastBlock);
+            lastBlock = addBorder(event.path[4], lastBlock);
 
         if (event.target.tabIndex != 1) {
             
