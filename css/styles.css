@@ -144,6 +144,17 @@ body {
     border-radius: 4rem;
     cursor: pointer;
 }
+.saveColor {
+    background-color: #f4f8f9;
+    color: hsl(176, 72%, 28%);
+}
+.bookmarkCircle {
+    fill: hsl(176, 72%, 28%);
+    transition: 0.3s ease;
+}
+.bookmarkSvg {
+    fill: #f4f8f9;
+}
 
 /* Status CSS */
 .status {

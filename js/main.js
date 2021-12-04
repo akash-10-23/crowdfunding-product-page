@@ -52,3 +52,23 @@ radioOptions.forEach((radio) => {
         }
     });
 });
+
+const bookmark = document.querySelector(".bookmark");
+const bookmarkText = document.querySelector(".save");
+
+function changeColor() {
+    const circleSvg = document.querySelector("#svgC");
+    circleSvg.classList.toggle("bookmarkCircle");
+    const pathSvg = document.querySelector("#svgP");
+    pathSvg.classList.toggle("bookmarkSvg");
+}
+
+bookmark.addEventListener("click", () => {
+    bookmarkText.classList.toggle("saveColor");
+    if (bookmarkText.innerHTML === "Bookmark") {
+        bookmarkText.innerHTML = "Bookmarked";
+    } else {
+        bookmarkText.innerHTML = "Bookmark";
+    }
+    changeColor();
+});
