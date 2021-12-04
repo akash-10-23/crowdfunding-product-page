@@ -72,3 +72,18 @@ bookmark.addEventListener("click", () => {
     }
     changeColor();
 });
+
+const thanks = document.querySelector(".thanks");
+const continueOptions = document.querySelectorAll(".continue");
+const finish = document.querySelector(".btnThanks");
+continueOptions.forEach((btnMenu) => {
+    btnMenu.addEventListener("click", () => {
+        window.scrollTo(0, 0);
+        $(".supportWindow").hide();
+        thanks.classList.toggle("thanksShow");
+    });
+});
+
+finish.addEventListener("click", () => {
+    supportMenu.classList.toggle("supportMenuShow");
+});
