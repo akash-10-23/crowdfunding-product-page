@@ -1,3 +1,27 @@
+const targetMoney = 100000;
+let totalBackers = 5007;
+let currentMoney = 89914;
+let currentProgress = (currentMoney * 100) / targetMoney;
+
+const progressBar = document.querySelector(".statusProgress");
+
+function upgradeProgress(money) {
+    if(currentMoney < targetMoney){
+        currentMoney+= money;
+        currentProgress = (currentMoney * 100) / targetMoney;
+        if(currentProgress > 100)
+            currentProgress = 100;
+        progressBar.style.width = `${currentProgress}%`;
+
+        const textMoney = document.querySelector("#currentMoney");
+        textMoney.innerHTML = currentMoney;
+        
+        const backers = document.querySelector("#totalBackers");
+        totalBackers++;
+        backers.innerHTML = totalBackers;
+    }
+}
+
 const support = document.getElementById("support");
 const supportMenu = document.querySelector(".supportMenu");
 const supportClose = document.querySelector(".supportClose");
@@ -77,13 +101,19 @@ const thanks = document.querySelector(".thanks");
 const continueOptions = document.querySelectorAll(".continue");
 const finish = document.querySelector(".btnThanks");
 continueOptions.forEach((btnMenu) => {
-    btnMenu.addEventListener("click", () => {
+    btnMenu.addEventListener("click", (event) => {
         window.scrollTo(0, 0);
         $(".supportWindow").hide();
         thanks.classList.toggle("thanksShow");
+
+        const inputValue = event.path[1].children[0].children[1].value;
+        upgradeProgress(parseInt(inputValue,10));
     });
 });
 
 finish.addEventListener("click", () => {
     supportMenu.classList.toggle("supportMenuShow");
 });
+
+
+
