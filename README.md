@@ -30,7 +30,7 @@ Users should be able to:
 ### Screenshot
 
 <div>
-  <img align="left" src="images/screencapture1.png" width=50% height=110%> 
+  <img align="left" src="images/screencapture1.png" width=50%> 
   <img align="right" src="images/screencapture2.png" width=45%>
   <img align="right" src="images/screencapture3.png" width=45%> 
 </div>
@@ -39,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo Link]()
-- Live Site URL: [Page hosted on Github Pages]()
+- Solution URL: [Github Repo Link](https://github.com/akash-10-23/crowdfunding-product-page)
+- Live Site URL: [Page hosted on Github Pages](https://akash-10-23.github.io/crowdfunding-product-page/)
 
 ## My process
 - Made structure of each part using HTML and CSS
